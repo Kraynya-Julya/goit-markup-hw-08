@@ -2,25 +2,40 @@
     width: 70px;
     height: 70px;
 }
+
+.features-list__mobile-item{
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - 60px);
+        margin-left: 30px;
+        flex-wrap: wrap;
+   } 
+     @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 4 - 90px);
+        display: flex;
+}
+}
 .features-list__icon{
-    // width: 270px;
+    width: 270px;
     height: 120px;
     margin-bottom: 30px;
     @extend %bg;
     background-color: #f5f4fa;
+    @media screen and (min-width: 480px){
+        width: 450px;  
+    }
+    @media screen and (min-width: 768px){
+        width: 768px;  
+    }
 }
-
-
 .features-list__title {
-    font-family: Roboto;
-    @include font (14px, 700, 16px, 0.03em);
-    align: left;
-    // display: flex;
+    font-family: Roboto;@include font (14px, 700, 16px, 0.03em);
+    text-align: center;
+    display: flex;
      margin-bottom: 10px;
      text-transform:uppercase;
-     text-align: center;
-     @media screen and (min-width: 768px) {
-        text-align: left
+     @media screen and (min-width: 768px){
+        text-align: left;
+     }
     }
 
 .features-list__text{
@@ -29,43 +44,28 @@
     color: #757575;
     margin: 0;
     // width: 270px;
-    width: 100%;
     
 }
 
-.section{
+.features-list{
+    margin-bottom: -30px;
     @media screen and (min-width: 768px) {
-    display: flex;}
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    }
+}
+
+.section{
     font-family: Roboto;
     @include font (14px, 700, 16px, 0.03em);
     padding-top: 107px;
     padding-bottom: 100px;
     display: block;
     box-sizing: border-box;
-}
-
-.features-list{
-    // flex-wrap: wrap;
-    margin-bottom: -60px;
     @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-
-    }
-    // display: flex;
-    margin: 0 auto;
-    margin-left: -27px;
-
+        padding-top: 60px;
+        padding-bottom: 60px;
+}
 }
 
-.features-list__mobile-item{
-  width: 100%;
-    @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 2 - 30px);
-    margin-left: 30px;
-} 
-    @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 4 - 30px);
- }   
-}

@@ -52,8 +52,6 @@
     // padding-right: 0px;
     // padding-bottom: 94px;
     // padding-left: 0px;
-    padding-top: 60px;
-    padding-bottom: 60px;
     background-color: #F5F4FA;
     @media screen and (min-width: 768px) {
         padding-top: 60px;
@@ -63,12 +61,10 @@
 .masters-list {
     // display: flex;
     // flex-wrap: wrap;
-    margin-bottom: -30px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px){
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-
+    margin: -15px;
     }
 }
 .masters-item {
@@ -80,13 +76,15 @@
 margin-top: 30px;
     // }
     @media screen and (min-width: 768px) {
-flex-basis: calc(100% / 2 - 30px);
+        width: 100%;
+flex-basis: calc(100% / 2 - 90px);
 margin-left: 30px;
+flex-wrap: wrap;
             } 
    @media screen and (min-width: 1200px) {
-flex-basis: calc(100% / 4 - 30px);
-&:not(:last-child)
-        }
+flex-basis: calc(100% / 4 - 60px);
+flex-wrap: nowrap;
+}
 }
     
 
