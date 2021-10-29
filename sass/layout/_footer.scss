@@ -98,6 +98,7 @@
   }
   .contacts-item-list {
     font-family: Roboto;
+    font-style: normal;
     @include font (14px, 400, 24px, 0.03em);
     color: var(--title--text-color);
   }

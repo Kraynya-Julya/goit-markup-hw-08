@@ -1,5 +1,9 @@
 .clients-section {
     background-color: var(--title--text-color);
+    @media screen and (min-width: 480px) {
+    padding-top: 37px;
+padding-bottom: 30px;
+ }   
 }
 
 .clients-section__title {
@@ -34,16 +38,21 @@ color: var(--primary-text-color);
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    transition: border-color 1px solid var(#afb1b8);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
     &:hover .clients-list__clients, 
     &:focus .clients-list__clients {
     fill: var(--accent-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     border-color: var(--accent-color), 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-}
+        }
+    }
 }
    
 .clients-list__clients {
+    fill:currentColor;
     @extend %bg;   
     width: 106px;
     height: 60px;

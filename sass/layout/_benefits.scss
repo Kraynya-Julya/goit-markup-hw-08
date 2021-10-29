@@ -1,62 +1,71 @@
-.features-icon__iten-antenna{
+.features-list__iten-antenna{
     width: 70px;
     height: 70px;
 }
-.features-icon{
-    width: 270px;
+.features-list__icon{
+    // width: 270px;
     height: 120px;
     margin-bottom: 30px;
     @extend %bg;
     background-color: #f5f4fa;
 }
-.features-list{
-    // @media screen  and (min-width: 480px){
-    // display: flex;
-    // margin: 0 auto;
-    // margin-left: -27px;
-    @media screen  and (min-width: 480px){
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -30px;
 
-}
-}
-.features-list__mobile-item{
-    width: 100%;
-    @media screen  and (min-width: 768px){ 
-        flex-basis: calc(100% / 2 - 30px);
-      margin-left: 30px;
-            }
-        @media screen  and (min-width: 1200px) {
-            flex-basis: calc(100% / 4 - 30px);
-                width: 1200px;
-            }
-    }
 
-.features-icon__title {
+.features-list__title {
     font-family: Roboto;
     @include font (14px, 700, 16px, 0.03em);
     align: left;
     // display: flex;
-     margin-bottom: 22px;
+     margin-bottom: 10px;
      text-transform:uppercase;
+     text-align: center;
+     @media screen and (min-width: 768px) {
+        text-align: left
     }
 
-.features-icon__text{
+.features-list__text{
     font-family: Roboto;
-    @include font (14px, 400, 16px, 0.03em);
+    @include font (14px, 400, 27px, 0.03em);
     color: #757575;
     margin: 0;
-    width: 270px;
+    // width: 270px;
+    width: 100%;
     
 }
 
-
 .section{
+    @media screen and (min-width: 768px) {
+    display: flex;}
     font-family: Roboto;
     @include font (14px, 700, 16px, 0.03em);
     padding-top: 107px;
     padding-bottom: 100px;
     display: block;
     box-sizing: border-box;
+}
+
+.features-list{
+    // flex-wrap: wrap;
+    margin-bottom: -60px;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+
+    }
+    // display: flex;
+    margin: 0 auto;
+    margin-left: -27px;
+
+}
+
+.features-list__mobile-item{
+  width: 100%;
+    @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+} 
+    @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+ }   
 }
