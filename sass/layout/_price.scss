@@ -1,0 +1,39 @@
+.gallery-list__item{
+    position: relative;
+     flex-basis: calc(100% / 3 - 30px);
+     margin-left: 30px;
+        
+    }
+
+.gallery-list__work {
+    font-family: Roboto;
+font-style: normal;
+text-align: center;
+@include font (14px, 700, 17px, 0.03em);
+text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    @extend %bg;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--title--text-color);    
+}
+
+.gallery{
+    padding-bottom: 94px;
+}
+.gallery-list{
+    display: flex;
+    margin-left: -30px;
+}
+
+.gallery__title {
+    margin: auto;
+    margin-bottom: 50px;
+    font-family: Roboto;
+font-style: normal;
+text-align: center;
+@include font (36px, 700, 42px, 0.03em);
+    color: var(--primary-text-color);
+}

@@ -1,0 +1,176 @@
+.subscription-btn {
+  @extend %align-items;
+    padding: 10px 27px;
+    @include font (16px, 400, 30px, 0.06em);
+    text-align: center;
+  }
+  .footer-subscription {
+    margin-left: 93px;
+  }
+  .strong {
+    font-family: Roboto;
+  font-style: normal;
+  @include font (14px, 700, 16px, 0.03em);
+  text-transform: uppercase;
+    display: block;
+    color: var(--title--text-color);
+    margin-bottom: 20px;
+    font-weight: bolder;
+  }
+ 
+  .subscription {
+    display: flex;
+  }
+  .subscription-input {
+    font-family: Roboto;
+  @include font (16px, 400, 20px, 0.03em);
+  @extend %align-items;
+  color: rgba(255, 255, 255, 0.6);
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 14px;
+    color: var(--title--text-color);
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .order {
+    display: flex;
+    font-family: Roboto;
+  @include font (16px, 700, 30px, 0.06em);
+  align-items: center;
+  text-align: center;
+  background: var(--accent-color);
+  background: var(--accent-color);
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    color: var(--title--text-color);
+   
+  }
+  .subscription-icon {
+    margin-left: 10px;
+  }
+  
+  .social-list {
+    @extend %align-items;
+    justify-content: center;
+    margin-left: -10px;
+  }
+  
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+  .contacts-title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: Raleway;
+    @include font (26px, 400, 31px, 0.03em);
+    color: var(--title--text-color);
+  }
+  .contacts-list {
+    margin: auto;
+  }
+  .contacts-address {
+    margin-top: 30px;
+  }
+  .contacts-item-list {
+    margin-top: 9px;
+  }
+  
+  .contacts-list-item {
+    @include font (26px, 400, 31px, 0.03em);
+    color: var(--accent-color);
+  }
+  
+  .contacts-list-right {
+    font-family: Raleway, sans-serif;
+    @include font (26px, 400, 31px, 0.03em);
+    color: var(--title--text-color);
+  }
+  .contacts-item-list {
+    font-family: Roboto;
+    @include font (14px, 400, 24px, 0.03em);
+    color: var(--title--text-color);
+  }
+  
+  .contacts-item-address {
+    font-family: Roboto, sans-serif;
+    @include font (14px, 400, 24px, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contacts-title {
+    font-style: none;
+    background-color: var(--second-color);
+  }
+  .contacts-link {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contacts-address {
+    font-style: none;
+  }
+
+  .footer-adress {
+    display: flex;
+    flex-direction: column;
+    width: 231px;
+    margin-right: 70px;
+}
+  .footer-social {
+      margin: auto;
+    margin-top: 12px;
+    margin-left: 70px;
+  }
+  .foot-flex {
+    display: flex;
+    align-items: baseline;
+  }
+  .social-title {
+    margin-bottom: 20px;
+    width: 145px;
+    height: 16px;
+    left: 516px;
+    top: 2751px;
+    color: var(--primary-title-color);
+    font-family: Roboto;
+    font-style: normal;
+    @include font (14px, 700, 16px, 0.03em);
+    text-transform: uppercase;
+  }
+  
+  .social-item {
+    margin-left: 10px;
+  }
+  
+    .footer-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0s;
+        &:hover,
+        &:focus {
+           background-color: var(--accent-color);
+        }
+      }
+  
+  .footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--title--text-color);
+  }

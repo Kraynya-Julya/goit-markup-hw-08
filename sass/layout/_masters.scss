@@ -1,0 +1,110 @@
+
+.masters-title{
+    color: var(--primary-text-color);
+    @include font (36px, 700, 18px, 0.03em);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.masters{
+    display: block;
+    // padding: 94px 0;
+    // padding-top: 94px;
+    padding-top: 54px;
+    padding-right: 0px;
+    // padding-bottom: 94px;
+    padding-bottom: 54px;
+    // padding-left: 0px;
+    background-color: #F5F4FA;
+}
+
+.masters-list {
+    @media screen  and (min-width: 480px){
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+}
+.masters-item {
+    width: 100%;
+    background-color: var(--title--text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px, 0px, 4px, 4px;
+    margin-bottom: 15px;
+    @media screen  and (min-width: 768px){ 
+    flex-basis: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  text-align: center;
+        }
+    @media screen  and (min-width: 1200px) {
+        flex-basis: calc(100% / 4 - 30px);
+            width: 1200px;
+        }
+}
+
+.masters-item-bottom{
+    // padding: 30px 0;
+    // padding-top: 30px;
+    // padding-right: 0px;
+    padding-bottom: 30px;
+    // padding-left: 0px;;
+
+}
+.masters-item-text{
+    @include font (36px, 700, 42px, 0.03em);
+        color: var(--primary-text-color);
+        margin-bottom: 30px;
+    
+    }
+    .masrers-item-title {
+        font-family: Roboto, sans-serif;
+    text-align: center;
+    @include font (16px, 500, 18px, 0.03em);
+        color: var(--primary-text-color);
+        margin-bottom: 10px;
+    
+    }
+
+.masters-item-text {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+@include font (16px, 400, 19px, 0.03em);
+    color: var(--second-text-color);
+}.social-list {
+    @extend %align-items;
+    justify-content: center;
+}
+.social-item {
+    // @extend %align-items;
+    // justify-content: center;
+    list-style: none;
+    
+}
+
+
+.social-link {
+    @extend %bg;
+    border-radius: 22px;
+    height: 44px;
+    width: 44px;
+    background-color: var(--primary-white-color);
+    fill: var(--icon-background);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, fill;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s, 0s;
+    &:hover,&.social-icon,
+    &:focus, &.social-icon{
+       background-color: var(--accent-color);
+        fill: var(--title--text-color);
+    }
+   }
+
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+}

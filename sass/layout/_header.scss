@@ -1,0 +1,116 @@
+.page {
+    background-color: #ffffff;
+    color: var(--primary-text-color);
+}
+.page-list-item {
+    color: var(--primary-text-color);
+    color: var(--accent-color);
+}
+.logo {
+ margin-right: 90px;
+ color:var(--primary-text-color);
+}
+
+.link-current {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .contacts-item-icon{
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill: currentColor;
+        margin-right: 10px;
+        fill: currentColor;
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
+    }
+    
+    .auth-nav-text {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+         &:hover,
+         &:focus {
+        color: var(--accent-color);
+        }
+    }
+    
+    
+    .nav-item{
+        position: relative;
+    }
+    
+    .site-nav{
+        display: flex;
+    }
+    
+    
+    .header-container{
+        display: flex;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .header-novigation {
+        display: flex;
+        align-items: center;
+    }
+    .auth-nav{
+        display: flex;
+        margin-left: auto;
+    }
+    .header-link {
+        padding-left: 50px;
+    }
+    .nav-item:not(:last-child) {
+        margin-right: 50px;
+      }
+    
+    .logo-item, .header-containe:focus
+    .logo-item, .header-containe:hover {
+        font-family: Raleway, sans-serif;
+    font-style: normal;
+    @include font (26px, 700, 31px, 0.03em);
+        color: var(--accent-color);
+    }
+    .logo-righr {
+        font-family: Raleway, sans-serif;
+    font-style: normal;
+    @include font (26px, 700, 31px, 0.03em);
+        color: var(--primary-text-color);
+    }
+    
+    .link-current {
+        font-family: Roboto, sans-serif;
+    font-style: normal;
+    @include font (14px, 500, 16px, 0.02em);
+        color: var(--primary-text-color);
+        &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+    }
+    
+    
+    .auth-nav-text {
+        font-family: Roboto, sans-serif;
+    font-style: normal;
+    @include font (14px, 500, 16px, 0.02em);    
+    color: var(--second-text-color);
+    &:hover, 
+    &:focus{
+        color: var(--accent-color);
+        }
+    }
+    
+     
+    .current::after {
+        position: absolute;
+        bottom: -31px;
+        right: 0;
+        content:'';
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+        display: block;
+        
+    
+    }

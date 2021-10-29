@@ -1,0 +1,26 @@
+.button{
+    font-family: Roboto;
+    font-style: normal;
+    @include font (16px, 700, 30px, 0.06em);
+    @extend %align-items;
+    text-align: center;
+        color: var(--title--text-color);
+        background-color: var(--accent-color);
+        @extend %bg;
+    padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 32px;
+        padding-right: 32px;
+        border-radius: 4px;
+    
+    }
+    .hero-btn{
+        margin: auto;
+        
+    }
+    .item {
+        flex-basis: calc(100% / 5 - 30px);
+        margin-left: 30px;
+    }
+    
+ 
