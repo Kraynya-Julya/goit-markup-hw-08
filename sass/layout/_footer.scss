@@ -75,7 +75,10 @@
     font-family: Raleway;
     @include font (26px, 400, 31px, 0.03em);
     color: var(--title--text-color);
+      font-style: none;
+      background-color: var(--second-color);
   }
+
   .contacts-list {
     margin: auto;
   }
@@ -108,10 +111,7 @@
     @include font (14px, 400, 24px, 0.03em);
     color: rgba(255, 255, 255, 0.6);
   }
-  .contacts-title {
-    font-style: none;
-    background-color: var(--second-color);
-  }
+  
   .contacts-link {
     color: rgba(255, 255, 255, 0.6);
   }
@@ -129,10 +129,17 @@
       margin: auto;
     margin-top: 12px;
     margin-left: 70px;
+    @media screen and (min-width: 768px){
+      display: flex;
+    justify-content: center;
+    }
   }
   .foot-flex {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
+    @media screen and (max-width: 1199px){
+      text-align: center;
+    }
   }
   .social-title {
     margin-bottom: 20px;

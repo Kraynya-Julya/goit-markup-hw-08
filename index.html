@@ -10,15 +10,25 @@
                 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
                 <link rel="stylesheet" href="./css/main.min.css">
-                <!-- <link rel="stylesheet" href="./css/style.css"> -->
+                <link rel="stylesheet" href="./css/style.css">
             </head>
-            <!-- <body class="page link">
+            <body class="page link">
                     <header class="header">
                     <div class="container header-container">
                     <nav class="header-novigation ">
                         <a href="WebStudio" class="logo list link">
                             <span class="logo-item link">Web</span>
                         <span class="logo-righr link">Studio</span>
+                        <button type="button" class="menu-button is-open" data-menu-botton>
+                            <svg 
+                            width="40" 
+                            height="40" 
+                            aria-label="Переключатель меню">
+                                <use class="icon-close" href ="./sprite3-defs.svg#icon-close"></use>
+                                <use class="icon-menu" href ="./sprite3-defs.svg#icon-menu_40px"></use>
+                            </svg>
+                        </button>
+                        <div class="menu-container">Студия</div>
                         </a>
                         <ul class="site-nav list">
                             <li class="nav-item">
@@ -48,12 +58,14 @@
                         </ul>
                     </div>                    
                 </header>
-                <main> -->
+                <main>
                     <!-- герой -->
-                    <!-- <section class="hero list">
+                    <section class="hero list">
+                        <div class="container hero-container">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                     <button data-modal-open class="button hero-btn" type="button">Заказать услугу</button>
-                    </section> -->
+                </div>
+                </section>
                 <!-- Преимущества -->
                 <section class="section">
                     <div class="container">
@@ -322,8 +334,8 @@
             </main>
             <section>
                 <footer class="contacts-title link">
-                    <!-- <div class="foot-flex"> -->
-                        <!-- <div class="container foot-flex" >
+                    <div class="foot-flex">
+                        <div class="container foot-flex" >
                         <div><span class="contacts-list-item link">Web</span>
                         <span class="contacts-list-right link">Studio</span>
                     <address class="contacts-address list">
@@ -363,10 +375,10 @@
                                 </svg>
                                 </a>
                             </li>
-                    </div> -->
+                    </div>
                     
                     <!-- Хвост на футере -->
-                    <!-- <form class="footer-subscription">
+                    <form class="footer-subscription">
                         <strong class="strong">Подпишитесь на рассылку</strong>
                         <div class="subscription">
                             <input class="subscription-input" type="email" name="email" placeholder="E-mail">
@@ -387,7 +399,7 @@
                         <svg widht="18" height="18" class="icon-close">
                             <use href="./sprite3-defs.svg#icon-close-black-18dp"></use>
                         </svg>
-                        </button> -->
+                        </button>
                         <!-- Модалка -->
                         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                         <form class="form" action>
@@ -452,5 +464,13 @@
                 </div>
             </div>
             <script src="./js/modal.js"></script>
+            <script src="js/mobile-menu.js"></script>
+            <script
+              defer
+              src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+              integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+              crossorigin="anonymous"
+            ></script>
+            <script defer src="js/mobile-menu.js"></script>
             </body>
             </html>

@@ -5,13 +5,15 @@
 
 .features-list__mobile-item{
     @media screen and (min-width: 768px) {
-        flex-basis: calc(100% / 2 - 60px);
+        flex-basis: calc(100% / 2 - 90px);
         margin-left: 30px;
+        display: flex;
         flex-wrap: wrap;
    } 
      @media screen and (min-width: 1200px) {
         flex-basis: calc(100% / 4 - 90px);
         display: flex;
+        width: 270px;
 }
 }
 .features-list__icon{
@@ -24,14 +26,13 @@
         width: 450px;  
     }
     @media screen and (min-width: 768px){
-        width: 768px;  
+        width: 354px;  
     }
 }
 .features-list__title {
     font-family: Roboto;@include font (14px, 700, 16px, 0.03em);
     text-align: center;
-    display: flex;
-     margin-bottom: 10px;
+        margin-bottom: 10px;
      text-transform:uppercase;
      @media screen and (min-width: 768px){
         text-align: left;

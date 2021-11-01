@@ -6,8 +6,15 @@
   }
   
   .item {
-    @extend %align-items;
-    justify-content: center;
+    // @extend %align-items;
+    // justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px){
+      justify-content: center;
+    margin-bottom: 30px;
+    }
   }
   
   .text-button {

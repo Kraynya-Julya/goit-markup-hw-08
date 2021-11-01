@@ -1,10 +1,4 @@
-.gallery-item {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * 30px);
-  margin-top: calc(-1 * 30px);
 
-}
 .services-overlay {
   position: relative;
   overflow: hidden;
@@ -51,24 +45,42 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px
 
 
 .gallery-item {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
    margin-left: -30px;
   margin-top: -30px;
-}
+  @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    }
+  }
 
 .gallery-list {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
+  // flex-basis: calc(100% / 3 - 30px);
+  // margin-left: 30px;
   margin-top: 30px;
-  border: 1px solid #ececec;
   width: 370px;
   position: relative;
  &:hover .gallery-top-text{
   transform: translateY(0);
   border: 1px solid #ececec;
  }
-}
+ @media screen and (max-width: 767px){
+   &:not(:last-child){
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px){
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px){
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+   }
+  }
+ }
+
 .masters-item-btn{
   
   padding-top: 20px;
